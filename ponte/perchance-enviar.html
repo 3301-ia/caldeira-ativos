@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ponte Caldeira · enviar receita do agente</title>
+<style>
+  :root{--navy:#0E1728;--ouro:#D9B45B;--texto:#E8E2D2}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,sans-serif;color:var(--texto);
+    background:radial-gradient(130% 92% at 50% -18%,rgba(217,180,91,.16),rgba(217,180,91,.03) 44%,rgba(8,15,27,0) 74%),linear-gradient(180deg,#0A1220,#0E1728 46%,#070D18);
+    padding:22px}
+  .cx{max-width:520px;margin:0 auto;border:1px solid rgba(217,180,91,.42);padding:22px}
+  h1{font-family:Georgia,serif;font-weight:400;font-size:17px;letter-spacing:.2em;text-transform:uppercase;
+    color:#F0DCA4;margin:0 0 4px;text-align:center}
+  .sub{text-align:center;color:#A2ABC0;font-size:10px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:20px}
+  label{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#A2ABC0;margin:14px 0 6px}
+  input,textarea,select{width:100%;padding:11px 12px;border-radius:5px;border:1px solid rgba(217,180,91,.28);
+    background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit}
+  textarea{min-height:92px;resize:vertical}
+  button{width:100%;margin-top:20px;padding:14px;border:none;border-radius:5px;cursor:pointer;
+    background:linear-gradient(180deg,#F0DCA4,#D9B45B);color:#101A2B;font-weight:700;
+    letter-spacing:.16em;text-transform:uppercase;font-size:12px}
+  .st{margin-top:14px;font-size:12px;text-align:center;min-height:16px;color:#A2ABC0}
+  .ok{color:#8FD18B}.erro{color:#E8A0A0}
+</style>
+</head>
+<body>
+<div class="cx">
+  <h1>Ponte Caldeira</h1>
+  <div class="sub">Receita do agente para o sistema</div>
+
+  <label>Agente</label>
+  <input id="agente" placeholder="Ex.: Chef Aurora">
+  <label>Nome da receita</label>
+  <input id="nome" placeholder="Ex.: Risoto de cogumelos">
+  <label>Categoria</label>
+  <input id="categoria" placeholder="Ex.: Buffet, Sobremesas, Porções">
+  <label>Rendimento e tempo</label>
+  <input id="rendimento" placeholder="Ex.: 4 porções · 40 min">
+  <label>Ingredientes (um por linha)</label>
+  <textarea id="ingredientes" placeholder="arroz arbóreo 320 g&#10;cogumelo paris 400 g&#10;caldo de legumes 1,2 L"></textarea>
+  <label>Modo de preparo</label>
+  <textarea id="preparo" placeholder="Descreva o passo a passo"></textarea>
+  <label>Link da imagem</label>
+  <input id="imagem" placeholder="https://...">
+  <button id="enviar">Enviar ao Caldeira</button>
+  <div id="status" class="st"></div>
+</div>
+
+<script>
+(function(){
+  var ENDPOINT = 'https://romerito-agente-9f88b64a.base44.app/functions/caldeiraReceber';
+  var TOKEN    = 'cg-perchance-2026';
+  var v = function(id){ return (document.getElementById(id).value || '').trim(); };
+  var st = document.getElementById('status');
+
+  function pacote(){
+    var rend = v('rendimento');
+    var min = (rend.match(/(\d+)\s*min/i) || [])[1] || 0;
+    return {
+      token: TOKEN,
+      agente: v('agente') || 'Perchance',
+      nome: v('nome'),
+      categoria: v('categoria'),
+      rendimento: rend,
+      tempo_preparo_min: Number(min) || 0,
+      ingredientes: v('ingredientes').split('\n').map(function(l){ return l.trim(); }).filter(Boolean),
+      modo_preparo: v('preparo'),
+      foto_url: v('imagem')
+    };
+  }
+
+  function b64(txt){
+    return btoa(unescape(encodeURIComponent(txt)));
+  }
+
+  document.getElementById('enviar').addEventListener('click', async function(){
+    var d = pacote();
+    if(!d.nome){ st.className='st erro'; st.textContent='Dê um nome à receita.'; return; }
+    st.className='st'; st.textContent='Enviando...';
+    try{
+      var r = await fetch(ENDPOINT, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(d)
+      });
+      var j = await r.json();
+      if(j && j.ok){ st.className='st ok'; st.textContent='Recebida: ' + j.nome + ' (' + j.acao + ')'; }
+      else { st.className='st erro'; st.textContent='Não entrou: ' + (j && j.erro ? j.erro : 'erro desconhecido'); }
+    }catch(e){
+      // rota do link: funciona mesmo quando o navegador bloqueia a chamada direta
+      window.open(ENDPOINT + '?d=' + encodeURIComponent(b64(JSON.stringify(d))), '_blank');
+      st.className='st'; st.textContent='Abrindo a confirmação em outra aba.';
+    }
+  });
+})();
+</script>
+</body>
+</html>
