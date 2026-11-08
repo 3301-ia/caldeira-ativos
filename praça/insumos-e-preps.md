@@ -20,6 +20,7 @@ Prefixo CG. Insumo vive da compra, prep nasce da manipulação na praça.
 | CG.14.02.001 | Batata pré-frita congelada | kg | confirmado: congelada e já porcionada |
 | CG.14.02.002 | Kibe congelado | un | confirmado: congelado, pronto para fritar |
 | CG.11.03.001 | Bacon | kg | base do bacon em cubos |
+| CG.11.03.002 | Salsichão | kg | exclusivo do espeto, item CG.03.02.004 |
 
 ## Preps da praça
 
@@ -38,13 +39,15 @@ Prefixo CG. Insumo vive da compra, prep nasce da manipulação na praça.
 - Batata: pré-frita congelada e já porcionada, sem fator de correção de limpeza.
 - Pimenta biquinho: conserva em vidro.
 - Origem dos frescos: não são comprados direto pela praça. Saem das praças de acesso, que já mantêm esses itens, por requisição interna.
+- Embutidos da operação: apenas presunto e mussarela. Salsicha, calabresa, linguiça e mortadela são do café da manhã, de outra praça.
+- Salsichão é item de espeto, com código próprio.
 
 ## O que ainda falta
 
-1. Embutidos citados em bloco: quais entram? (salsicha, calabresa, linguiça, mortadela)
-2. Peso do bloco de cheddar e peso das fatias, para fechar o rendimento.
-3. Pesos das porções servidas.
-4. Barbecue: comprado pronto ou feito na casa?
+1. Peso do bloco de cheddar e peso das fatias, para fechar o rendimento.
+2. Pesos das porções servidas.
+3. Barbecue: comprado pronto ou feito na casa?
+4. Nome do item de cardápio: espeto de linguiça ou espeto de salsichão?
 
 ## O que a origem em praça de acesso muda
 
