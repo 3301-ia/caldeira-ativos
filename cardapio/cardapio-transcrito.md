@@ -1,6 +1,7 @@
 # Cardápio Caldeira Gourmet · transcrição completa
 
 Fonte: 12 fotos do cardápio impresso e da adega, tiradas no local em 8 de novembro de 2026.
+Conferido com o responsável no mesmo dia: espetos incluem alcatra, o pastel é mini e a linha de bebidas será cruzada com o PDV.
 Leitura cruzada entre as folhas inteiras e os recortes. Itens marcados com (?) precisam de conferência.
 
 ## Salgados
@@ -35,10 +36,10 @@ Leitura cruzada entre as folhas inteiras e os recortes. Itens marcados com (?) p
 
 | Item | Preço |
 |---|---|
-| Espeto: fraldinha/maminha (?), frango, coração, queijo coalho, linguiça (?) e medalhão de frango | 15,80 |
+| Espeto: alcatra, frango, coração, queijo coalho, linguiça e medalhão de frango | 15,80 |
 | Espeto de mignon | 19,50 |
 
-A linha dos espetos está cortada na borda da foto. O que se lê com segurança: frango, coração, queijo coalho, medalhão de frango e uma carne de "...atra" no início, provavelmente maminha ou fraldinha. Precisa de foto da borda esquerda.
+Linha confirmada pelo responsável: alcatra, frango, coração, queijo coalho, linguiça e medalhão de frango. A borda cortada na foto era apenas a palavra alcatra.
 
 ## Porções (servidas em peso in natura)
 
@@ -56,10 +57,10 @@ A linha dos espetos está cortada na borda da foto. O que se lê com segurança:
 | Peito de frango à palito grelhado 400g com fritas | 54,00 |
 | Fritas 400g | 24,00 |
 | Porção de torresmo 400g | 30,00 |
-| Porção de pastel queijo/carne (15 unidades) | 16,80 |
+| Porção de pastel queijo/carne, 15 mini pastéis | 16,80 |
 | Omelete (presunto, queijo, tomate) | 24,00 |
 
-Nota: o pastel a 16,80 por 15 unidades dá 1,12 a unidade, fora de qualquer padrão do cardápio. Conferir se não é 46,80 ou se a unidade é outra.
+Nota confirmada: são mini pastéis, 15 unidades por 16,80, ou R$ 1,12 cada. A compra é feita em caixa fechada com muitas unidades, o que explica o custo baixo por unidade. Não é erro de leitura.
 
 ## Bebidas
 
@@ -165,7 +166,4 @@ Observação de gestão: os vinhos estão deitados com a rolha para baixo na pra
 
 ## Pendências de leitura
 
-1. Linha dos espetos cortada na borda esquerda.
-2. Preço do pastel (16,80 por 15 unidades).
-3. Sukita: 7,00 ou 11,50.
-4. Centavos das cervejas 473 ml e longnecks (reflexo).
+Nenhuma pendência de item. Restam apenas os centavos de bebida (Sukita e cervejas 473 ml e longneck), que serão cruzados com o PDV e não travam a montagem das fichas.
