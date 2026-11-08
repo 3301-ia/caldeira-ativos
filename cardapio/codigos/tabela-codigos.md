@@ -42,7 +42,7 @@ Total de itens: **100**.
 | `CG.03.01.001` | Espeto de alcatra | 15,80 |
 | `CG.03.02.001` | Espeto de frango | 15,80 |
 | `CG.03.02.002` | Espeto de coração | 15,80 |
-| `CG.03.02.003` | Espeto de linguiça | 15,80 |
+| `CG.03.02.003` | Espeto de salsichão | 15,80 |
 | `CG.03.02.004` | Espeto de medalhão de frango | 15,80 |
 | `CG.03.03.001` | Espeto de queijo coalho | 15,80 |
 | `CG.03.01.002` | Espeto de mignon | 19,50 |

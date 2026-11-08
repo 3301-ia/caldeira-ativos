@@ -82,7 +82,7 @@ itens = [
     ("03","01","Espeto de alcatra",15.80,"un",""),
     ("03","02","Espeto de frango",15.80,"un",""),
     ("03","02","Espeto de coração",15.80,"un",""),
-    ("03","02","Espeto de linguiça",15.80,"un",""),
+    ("03","02","Espeto de salsichão",15.80,"un","insumo CG.11.03.002"),
     ("03","02","Espeto de medalhão de frango",15.80,"un",""),
     ("03","03","Espeto de queijo coalho",15.80,"un",""),
     ("03","01","Espeto de mignon",19.50,"un",""),
