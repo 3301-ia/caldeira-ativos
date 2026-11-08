@@ -4,7 +4,7 @@ Prefixo do restaurante: **CG** (Caldeira Gourmet).
 Formato: `CG.família.subfamília.sequencial`, seis dígitos no núcleo, prefixo separado por ponto.
 Forma compacta para o sistema: `CG` seguido dos seis dígitos, sem pontos.
 
-Total de itens: **100**.
+Total de itens: **101**.
 
 
 ## 01 Salgados
@@ -146,6 +146,12 @@ Total de itens: **100**.
 | `CG.08.03.001` | Miolo Seleção Chardonnay e Viognier | 150,00 |
 | `CG.08.03.002` | Seival Blanc | 150,00 |
 | `CG.08.04.001` | Seival Rosé | 150,00 |
+
+## 09 Frutas e naturais
+
+| Código | Item | Preço |
+|---|---|---|
+| `CG.09.01.001` | Salada de fruta | a definir |
 
 ## Regras do código
 

@@ -51,6 +51,11 @@ familias = {
         "03": "Brancos",
         "04": "Rosés",
     },
+    ("09", "Frutas e naturais"): {
+        "01": "Saladas de fruta",
+        "02": "Frutas porcionadas",
+        "03": "Naturais e leves",
+    },
 }
 
 mapa = {}
@@ -166,6 +171,8 @@ itens = [
     ("08","03","Miolo Seleção Chardonnay e Viognier",150.00,"garrafa",""),
     ("08","03","Seival Blanc",150.00,"garrafa",""),
     ("08","04","Seival Rosé",150.00,"garrafa",""),
+
+    ("09","01","Salada de fruta",None,"pote","preço a confirmar no PDV"),
 ]
 
 # sequencial dentro de cada familia+subfamilia
@@ -182,7 +189,7 @@ for fam, sub, nome, preco, un, obs in itens:
         "familia": f"{fam} {mapa[fam][0]}",
         "subfamilia": f"{fam}.{sub} {mapa[fam][1][sub]}",
         "item": nome,
-        "preco": f"{preco:.2f}".replace(".", ","),
+        "preco": "a definir" if preco is None else f"{preco:.2f}".replace(".", ","),
         "unidade": un,
         "observacao": obs,
     })
