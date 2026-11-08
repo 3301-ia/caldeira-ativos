@@ -15,10 +15,10 @@ Prefixo CG. Insumo vive da compra, prep nasce da manipulação na praça.
 | CG.10.01.001 | Cebolinha | kg | in natura |
 | CG.10.01.002 | Salsinha | kg | in natura |
 | CG.10.02.001 | Cebola | kg | in natura |
-| CG.13.01.001 | Pimenta biquinho | kg | conserva ou fresca, a confirmar |
+| CG.13.01.001 | Pimenta biquinho | vidro | confirmado: conserva em vidro |
 | CG.13.01.002 | Molho barbecue pronto | L | se for da casa, vira prep |
-| CG.14.02.001 | Batata pré-frita congelada | kg | ou in natura, a confirmar |
-| CG.14.02.002 | Kibe congelado | un | pronto ou montado, a confirmar |
+| CG.14.02.001 | Batata pré-frita congelada | kg | confirmado: congelada e já porcionada |
+| CG.14.02.002 | Kibe congelado | un | confirmado: congelado, pronto para fritar |
 | CG.11.03.001 | Bacon | kg | base do bacon em cubos |
 
 ## Preps da praça
@@ -32,14 +32,27 @@ Prefixo CG. Insumo vive da compra, prep nasce da manipulação na praça.
 | CG.20.03.001 | Bacon em cubos | kg | CG.11.03.001 |
 | CG.20.03.002 | Queijo cheddar fatiado | kg | CG.12.01.002 |
 
-## O que falta para fechar
+## Confirmado pelo responsável
+
+- Quibe: vem congelado, pronto para fritar.
+- Batata: pré-frita congelada e já porcionada, sem fator de correção de limpeza.
+- Pimenta biquinho: conserva em vidro.
+- Origem dos frescos: não são comprados direto pela praça. Saem das praças de acesso, que já mantêm esses itens, por requisição interna.
+
+## O que ainda falta
 
 1. Embutidos citados em bloco: quais entram? (salsicha, calabresa, linguiça, mortadela)
-2. Cheddar fatiado: o rendimento não fecha. Precisa de pesagem bloco antes e fatias depois.
-3. Barbecue: comprado pronto ou feito na casa?
-4. Kibe: congelado pronto ou montado na praça?
-5. Batata: pré-frita congelada ou in natura com fator de correção?
-6. Biquinho: vidro em conserva ou fresca do hortifruti?
+2. Peso do bloco de cheddar e peso das fatias, para fechar o rendimento.
+3. Pesos das porções servidas.
+4. Barbecue: comprado pronto ou feito na casa?
+
+## O que a origem em praça de acesso muda
+
+A praça não compra o fresco: ela requisita de outra praça interna. Isso tem três consequências diretas.
+
+1. A baixa é transferência, não compra. Se as duas pontas baixarem como compra, o custo entra duas vezes.
+2. O preço que vale é o da compra feita pela praça de acesso, rateado. Sem isso, o custo da praça vira zero e a margem mente.
+3. Requisição interna sem conferência é onde o desvio desaparece: sai da praça A, não entra na B, e ninguém vê.
 
 ## Regra de pesagem
 
